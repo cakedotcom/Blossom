@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blossom | Register</title>
+        <link rel="icon" href="ufina1.png">
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&display=swap');
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background: url("flowerbg.png");
+            }
+
+            .container {
+                
+                justify-content: center;
+                align-items: center;    
+                background-color: aqua;
+                padding: 50px;
+                background: transparent;
+                border: 2px solid rgb(175, 175, 175);
+                border-radius: 30px;
+                background-color: rgba(240, 248, 255, 0.219);
+                display: block;
+                flex-direction: row;
+            }
+
+            .form-container {
+                border-style: none;
+                border-radius: 30px;
+                padding: 5px;
+                justify-self: center;
+            }
+
+            .input-box {
+                background: transparent;
+                border: 2px solid rgb(255, 235, 235);
+                padding: 20px;
+                border-radius: 30px;
+            }
+
+            .input-box:focus {
+                outline: none;
+            }
+
+            #register-button {
+                border-style: none;
+                padding: 15px 110px;
+                border-radius: 20px;
+                font-family: Verdana;
+                font-weight: bold;
+                background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+                box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.301);
+                transition: 0.5s;
+                color: #522d2d;
+            }
+
+            #register-button:hover {
+                transform: scale(1.1);
+                background: linear-gradient(to right, #ce737f, #ffb9cb);
+                box-shadow: none;
+                color: #FFDDE1;
+            }
+
+            h1 {
+                font-family: "Monoton", sans-serif;
+                justify-self: center;
+                font-weight: 200;
+                font-size: 38px;
+                color: #c06161;
+            }
+
+            input::placeholder {
+                color: rgb(92, 28, 39); 
+            }
+
+            .login-container {
+                display: flex;
+                justify-content: space-evenly;
+                font-family: Verdana;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            #login-link {
+                color: #e05162;
+            }
+
+            #gender-label {
+                font-family: Verdana;
+                color: rgb(92, 28, 39);
+                font-weight: 200;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+            }
+
+
+            #radio-buttons {
+                display: inline-block;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 30px;
+                color: #522d2d;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="container">
+                <form action="register">
+                    <h1>Register</h1>
+
+                    <div class="form-container">
+                        <input type="text" class="input-box" id="id" placeholder="Student ID Number" required>
+                    </div>
+
+                   <div class="form-container"> 
+                    <input type="text" class="input-box" id="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-container">
+                    <input type="text" class="input-box" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-container">
+                        <input type="text" class="input-box" id="NUMBER" placeholder="Phone Number" required>
+                    </div>
+                    
+                    
+                    <label id="gender-label" for="gender">Gender: </label> <br>
+                    <input id="radio-buttons" type="radio" name="gender" value="male">Male
+                    <input id="radio-buttons" type="radio" name="gender" value="female">Female
+                    <input id="radio-buttons" type="radio" name="gender" value="other">Other
+                    
+
+                    <div class="form-container">
+                    <input type="text" class="input-box" id="course" placeholder="Course" required>
+                    </div>
+
+                    <div class="form-container">
+                    <input type="password" class="input-box" id="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="form-container">
+                    <input type="password" class="input-box" id="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+
+                    <button id="register-button" type="submit">Register</button>
+
+                    <div class="login-container">
+                        <p>Already have an account?</p>
+                        <a id="login-link" href="login.html">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </body>
+</html>

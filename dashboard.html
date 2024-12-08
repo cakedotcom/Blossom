@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blossom  | Dashboard</title>
+        <link rel="icon" href="ufina1.png">
+
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&display=swap');
+             * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                background: url("flowerbg.png");
+            }
+
+            header {
+                display: flex;
+                justify-content: center;
+                font-family: "Monoton", sans-serif;
+                font-weight: 300;
+                font-size: 32px;
+                color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.527);
+                background-color: rgba(204, 204, 204, 0.507);
+                border-radius: 20px;
+            }
+
+            header p {
+                color: rgb(177, 66, 84);
+            }
+
+            .container {
+                
+                justify-content: center;
+                width: 30vw;
+                margin-left: 540px;
+               background-color: transparent;
+               border: 2px solid #ffc2d1;
+               background-color: rgba(248, 164, 192, 0.603);
+               padding: 50px;
+               border-radius: 25px;
+               box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.315);
+               display: inline-block;
+               margin-bottom: 20px;
+               margin-top: 20px;
+               
+            }
+            
+            .welcome-section {
+                margin-top: 10px;
+                display: block;
+                justify-self: center;
+                
+            }
+
+            .welcome-section h2 {
+                margin-bottom: 20px;
+                font-family: Verdana;
+            }
+            
+            .welcome-section p {
+                font-family: Verdana;
+                margin-bottom: 20px;
+            }
+
+            .table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 20px;
+            
+            }
+
+            .table th{
+                background-color: rgba(126, 80, 80, 0.918);
+                color: rgb(255, 157, 157);
+                text-align: left;
+                
+            }
+            
+            .table th, .table td {
+                padding: 20px;
+            }
+
+            .table tbody tr {
+                border-bottom: 1px solid gray;
+            }
+
+            .table tbody tr:nth-of-type(even) {
+                background-color: rgba(204, 76, 76, 0.486);
+            }
+
+            .table tbody tr:nth-of-type(odd) {
+                background-color: rgba(228, 149, 149, 0.521);
+            }
+
+            .table tbody tr:last-of-type {
+                border-bottom: 2px solid rgba(114, 32, 32, 0.705);
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-evenly;
+                
+            }
+
+            .dashboard-button {
+                border-style: none;
+                padding: 12px;
+                border-radius: 20px;
+                font-family: Verdana;
+                font-weight: bold;
+                background: linear-gradient(to right, #EE9CA7, #FFDDE1);
+                box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.301);
+                transition: 0.5s;
+                color: #522d2d;
+            }
+
+            .dashboard-button:hover {
+                transform: scale(1.1);
+                background: linear-gradient(to right, #ce737f, #ffb9cb);
+                box-shadow: none;
+                color: #FFDDE1;
+            }
+        </style>
+    </head>
+        <body>
+            <header>
+                <p>Student Dashboard</p>
+            </header>
+
+            <div class="container">
+                <div class="welcome-section">
+                    <h2>Welcome, Jane Doe!</h2>
+                    <p>Here is your dashboard overview: </p>
+                </div> 
+                <div class="table-container">
+                <table class="table">
+                    <tr>
+                      <th>Field</th>
+                      <th>Information</th>
+                    </tr>
+                    <tr>
+                      <td>Student ID</td>
+                      <td>123456</td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td>janedoe0@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Phone Number</td>
+                      <td>123-456-7890</td>
+                    </tr>
+                    <tr>
+                      <td>Gender</td>
+                      <td>Female</td>
+                    </tr>
+                    <tr>
+                      <td>Course</td>
+                      <td>Computer Science</td>
+                    </tr>
+                  </table>
+                  </div>
+                  
+                <div class="button-container">
+                    <button class="dashboard-button" type="">Update Profile</button>
+                    <button class="dashboard-button" type="">View Grade</button>
+                    <button class="dashboard-button" type="">Log out</button>
+                </div> 
+            </div>
+        </body>
+</html>
